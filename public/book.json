@@ -1,0 +1,87 @@
+[
+    {
+      "bookId": "1",
+      "bookName": "The Alchemist",
+      "author": "Paulo Coelho",
+      "image": "https://i.ibb.co/bRK4vvc/71a-Ft4-OTOL.jpg",
+      "review": "A timeless classic about following your dreams.",
+      "totalPages": 208,
+      "rating": 4.5,
+      "category": "Fiction",
+      "tags": ["Adventure", "Philosophy", "Dreams"],
+      "publisher": "HarperCollins",
+      "yearOfPublishing": 1988,
+      "description": "A gripping tale of adventure and self-discovery, 'The Alchemist' by Paulo Coelho follows the journey of Santiago, a shepherd boy, as he seeks to fulfill his destiny. Along the way, he encounters mentors, tests his courage, and learns profound lessons about the universe and his place within it."
+    },
+    {
+      "bookId": "2",
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://i.ibb.co/4ZzxLdw/9627c13ed33df311dc445addb11b5ec5.jpg",
+      "review": "An American classic exploring themes of racism and morality.",
+      "totalPages": 336,
+      "rating": 4.8,
+      "category": "Fiction",
+      "tags": ["Social Issues", "Legal Drama"],
+      "publisher": "J. B. Lippincott & Co.",
+      "yearOfPublishing": 1960,
+      "description": "Set in the racially charged atmosphere of the American South during the 1930s, 'To Kill a Mockingbird' by Harper Lee delves into profound themes of racial injustice, moral growth, and compassion. Through the eyes of Scout Finch, readers witness her father Atticus Finch's brave stand against prejudice and ignorance."
+    },
+    {
+      "bookId": "3",
+      "bookName": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "image": "https://i.ibb.co/H42J2zd/74521e05c0d801a5022f153b31f561fe-jpg-750x750-jpg.webp",
+      "review": "An engaging exploration of the history of our species.",
+      "totalPages": 464,
+      "rating": 4.7,
+      "category": "Non-Fiction",
+      "tags": ["History", "Anthropology", "Evolution"],
+      "publisher": "HarperCollins",
+      "yearOfPublishing": 2011,
+      "description": "In 'Sapiens: A Brief History of Humankind,' Yuval Noah Harari takes readers on a fascinating journey through the history of our species, from ancient ancestors to modern societies. Harari's engaging narrative weaves together anthropology, biology, and history to offer thought-provoking insights into human evolution and culture."
+    },
+    {
+      "bookId": "4",
+      "bookName": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "image": "https://i.ibb.co/CKkNCLq/047c9878-9845-473c-9635-5f32545746b0-1355x2040.jpg",
+      "review": "A hilarious and thought-provoking journey through space.",
+      "totalPages": 224,
+      "rating": 4.4,
+      "category": "Science Fiction",
+      "tags": ["Humor", "Adventure", "Space"],
+      "publisher": "Pan Books",
+      "yearOfPublishing": 1979,
+      "description": "Douglas Adams' 'The Hitchhiker's Guide to the Galaxy' is a comedic romp through space and time, filled with quirky characters, absurd situations, and philosophical musings. Join Arthur Dent and Ford Prefect as they hitchhike across the galaxy and encounter the bizarre and hilarious."
+    },
+    {
+      "bookId": "5",
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://i.ibb.co/hM97sSj/170445334.jpg",
+      "review": "A tragic story of love and excess in the Jazz Age.",
+      "totalPages": 180,
+      "rating": 4.6,
+      "category": "Fiction",
+      "tags": ["Romance", "Wealth", "American Dream"],
+      "publisher": "Charles Scribner's Sons",
+      "yearOfPublishing": 1925,
+      "description": "Set amidst the glittering parties and decadence of the Roaring Twenties, 'The Great Gatsby' by F. Scott Fitzgerald explores themes of love, wealth, and the elusive American Dream. Through the eyes of narrator Nick Carraway, readers enter the world of Jay Gatsby and Daisy Buchanan, discovering the dark realities beneath the surface glamour."
+    },
+    {
+      "bookId": "6",
+      "bookName": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "image": "https://i.ibb.co/gjrJVD6/thinking-fast-and-slow.jpg",
+      "review": "Insights into human decision-making and cognitive biases.",
+      "totalPages": 512,
+      "rating": 4.9,
+      "category": "Non-Fiction",
+      "tags": ["Psychology", "Behavioral Economics"],
+      "publisher": "Farrar, Straus and Giroux",
+      "yearOfPublishing": 2011,
+      "description": "Daniel Kahneman's 'Thinking, Fast and Slow' offers profound insights into the workings of the human mind, exploring the two systems that drive how we think and make decisions. Through engaging examples and research, Kahneman illuminates the biases and heuristics that influence our choices, offering valuable lessons for understanding our thought processes."
+    }
+  ]
+  

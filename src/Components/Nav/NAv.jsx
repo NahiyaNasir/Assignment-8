@@ -32,8 +32,8 @@ const NAv = () => {
     </ul>
   </div>
   <div className="navbar-end gap-3">
-    <a className="btn">Sing up</a>
-    <a className="btn">Sing in</a>
+    <a className="btn  bg-[#23BE0A]">Sing up</a>
+    <a className="btn bg-[#59C6D2]">Sing in</a>
   </div>
 </div>
         </div>

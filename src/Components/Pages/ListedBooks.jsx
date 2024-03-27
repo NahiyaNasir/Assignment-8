@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-//import ListedBook from "./ListedBook";
+
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-// import { FaReadme } from "react-icons/fa6";
+
 import "react-tabs/style/react-tabs.css";
 import WishList from "../WishList/WishList";
 import Read from "../Read/Read";
-// import { CiBookmark } from "react-icons/ci";
+
 const ListedBooks = () => {
   const [read, setRead] = useState([]);
   const [wish, setWish] = useState([]);
@@ -18,17 +18,42 @@ const ListedBooks = () => {
     const showDataRead = JSON.parse(localStorage.getItem("books"));
     setRead(showDataRead);
   }, []);
-  console.log(read);
+  //console.log(read);
+    const[ sort, setSort]=useState([])
+    console.log(sort);
+    useEffect(()=>{
+        const sortedData = JSON.parse(localStorage.getItem("books"));
+        setSort(sortedData)
+      
+    },[])
   return (
-    <div>
-      <h4 className=" h-[100px] bg-base-200 text-center font-bold mt-4 shadow-lg rounded-lg">
+    <div className="  max-w-7xl ml-12 ">
+      <h4 className=" h-[100px] bg-base-200 text-center font-bold mt-4 shadow-lg rounded-lg flex justify-center items-center">
         Books
       </h4>
+      {/*  sot data */}
+      
+      <div className="flex justify-start items-center">
+        <details className="dropdown">
+          <summary className="m-1 btn">open or close</summary>
+          <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-200 rounded-box w-52">
+            <li>
+              <a>Rating </a>
+            </li>
+            <li>
+              <a>Number of pages</a>
+            </li>
+            <li>
+              <a>Year of publishing</a>
+            </li>
+          </ul>
+        </details>
+      </div>
 
-      <Tabs>
+      <Tabs className="mt-6">
         <TabList>
           <Tab> Read</Tab>
-          {/* <Tab > Wish</Tab> */}
+          <Tab> Wish</Tab>
         </TabList>
 
         <TabPanel>

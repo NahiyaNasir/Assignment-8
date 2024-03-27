@@ -4,11 +4,11 @@ import NAv from "../Nav/NAv";
 
 const Root = () => {
     return (
-        <div>
-            <div className=" h-16">
+        <div className=" ">
+            <div className=" h-16 ">
             <NAv></NAv>
             </div>
-                 <div className=" ">
+                 <div className="min-h-[calc(100vh-64)] mx-auto ">
                  <Outlet></Outlet>
                  </div>
           

@@ -18,14 +18,14 @@ const StoredDataToLocalStorage= (details)=>{
 }
 
             const StoredDataToLocalStorage2= (details)=>{
-                const storageData=JSON.parse(localStorage.getItem ('books')) || []
+                const storageData=JSON.parse(localStorage.getItem ('wish')) || []
                     console.log(storageData);
                         const savedData= storageData.find(item=> item.bookId === details.bookId )
                         if(savedData ){
                        toast.error('Already exists')
                         }else{
                             storageData.push(details) 
-                            localStorage.setItem('books',JSON.stringify(storageData)) 
+                            localStorage.setItem('wish',JSON.stringify(storageData)) 
                             toast.success('added')
                         }
          

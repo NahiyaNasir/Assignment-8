@@ -21,11 +21,11 @@ const BookDetails = () => {
       
     }
     return (
-        <div>
+        <div className="h-[711px]">
 
            
-            <div className="card card-side bg-base-100 shadow-xl">
-  <figure><img src= { details.image} alt="Movie"/></figure>
+            <div className="card card-side bg-base-100 shadow-xl ">
+  <figure><img className="w-[570px] h-[570px]"   src= { details.image} alt="Movie"/></figure>
   <div className="card-body">
     <h2 className="card-title">{ details.bookName}</h2>
     <p className="font-mono">By :{ details.author}</p>

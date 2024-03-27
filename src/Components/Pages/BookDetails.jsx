@@ -1,23 +1,24 @@
 import {  useLoaderData, useParams } from "react-router-dom";
-
+import { StoredDataToLocalStorage, StoredDataToLocalStorage2 } from "./Utilities/LocalStorage";
+import { ToastContainer,  } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const BookDetails = () => {
     const book=useLoaderData()
     console.log(book);
     const {bookId}=useParams()
    // console.log(bookId);
-   const details=book.find(b=>b.bookId== bookId)
+   const details=book.find(b=>b.bookId==bookId )
    console.log (details);
     const handelRead =()=>{
         console.log('ccc');
-        const storageData=JSON.parse(localStorage.getItem ('books')) 
-            const savedData= storageData.find(item=> item.Id === details.id )
-            if(savedData){
-                alert('oooooooo')
-            }else{
-                storageData.push(details) 
-                localStorage.setItem('books',JSON.stringify(storageData)) 
-            }
+       StoredDataToLocalStorage(details)
+    
+    }
+    const handelWL=()=>{
+      console.log('click');
+            StoredDataToLocalStorage2(details)
+      
     }
     return (
         <div>
@@ -34,16 +35,18 @@ const BookDetails = () => {
     <p className="text-xl"> Review : {details.review} <br />t {details.description}</p>
     <div className="divider"></div>
     <p className="font-serif text-xl">Name of Pages:  { details.totalPages}</p>
-    <p className="font-serif text-xl"> Publisher : {find.publisher}</p>
-    <p>Year Of Publishing: {find.yearOfPublishing}</p>
-    <p> Ratting:{find.rating}</p>
+    <p className="font-serif text-xl"> Publisher : {details.publisher}</p>
+    <p>Year Of Publishing: {details.yearOfPublishing}</p>
+    <p> Ratting:{details.rating}</p>
     <div className="card-actions ">
  <button className="btn btn-primary" onClick={handelRead}>Read</button> 
- {/* <button className="btn btn-primary" onClick={handelWL}>WishList</button>  */}
+
+ <button className="btn btn-primary" onClick={handelWL}>WishList</button> 
  
 
     </div>
   </div>
+  <ToastContainer></ToastContainer> 
 </div>
           
            

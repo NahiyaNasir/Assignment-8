@@ -23,24 +23,26 @@ const ListedBooks = () => {
   }, []);
   //console.log(read);
   //    for sorting data
-  const [sortData, setSortData] = useState([]);
-          useEffect(()=>{
-                const showSorting= JSON.parse(localStorage.getItem('books'))|| []
-              setSortData(showSorting)
-          },[])
+
+  // const [sortData, setSortData] = useState([]);
+          // useEffect(()=>{
+                // const showSorting= JSON.parse(localStorage.getItem('books'))|| []
+              // setSortData(showSorting)
+          // },[])
  
-  const handleSorting = (sorting) => {
-    const sortedData = [...sortData]
-    console.log(sortData);
-    if (sorting === "rating") {
-      sortData.sort((a, b) => b.rating - a.rating);
-    } else if (sorting === "yearOfPublishing") {
-      sortData.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
-    } else if (sorting === "totalPages") {
-      sortData.sort((a, b) => b.totalPages - a.totalPages);
-    }
-    setSortData(sortedData);
-  };
+  // const handleSorting = (sorting) => {
+    // const sortedData = [...sortData]
+    // console.log(sortData);
+    // if (sorting === "rating") {
+      // sortData.sort((a, b) => b.rating - a.rating);
+    // } else if (sorting === "yearOfPublishing") {
+      // sortData.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
+    // } else if (sorting === "totalPages") {
+      // sortData.sort((a, b) => b.totalPages - a.totalPages);
+    // }
+    // setSortData(sortedData);
+  // };
+  
      
   return (
     <div className="max-w-7xl ml-12">
@@ -49,6 +51,7 @@ const ListedBooks = () => {
       </h4>
 
       {/* Sorting dropdown */}
+      {/*  *
       <select
         className="select w-full max-w-xs"
         value={sortData}
@@ -69,7 +72,7 @@ const ListedBooks = () => {
           </li>
         ))}
       </ul>
-
+  */}
 
 
 

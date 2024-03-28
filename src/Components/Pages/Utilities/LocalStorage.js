@@ -5,7 +5,7 @@ export {StoredDataToLocalStorage,StoredDataToLocalStorage2}
 
 const StoredDataToLocalStorage= (details)=>{
     const storageData=JSON.parse(localStorage.getItem ('books')) || []
-        console.log(storageData);
+        // console.log(storageData);
             const savedData= storageData.find(item=> item.bookId === details.bookId )
             if(savedData){
            toast.error('Already exists')

@@ -25,11 +25,11 @@ const NAv = () => {
     <ul className="menu menu-horizontal px-1 flex gap-4">
       
     <NavLink to="/"
-    className={({isActive})=> isActive? ' font-bold bg-blue-300 ':'font-bold'}>Home</NavLink>
-      <NavLink to="/booksList"
-    className={({isActive})=> isActive? ' font-bold bg-blue-300 ':'font-bold'}>Listed Books</NavLink>
+    className={({isActive})=> isActive? ' font-bold  "border-solid border-2 border-indigo-600  p-2 text-primary   ':'font-bold p-2 '}>Home</NavLink>
+      <NavLink to="/booksList"  
+    className={({isActive})=> isActive? ' font-bold  "border-solid border-2 border-indigo-600  p-2 text-primary  ':'font-bold  p-2'}>Listed Books</NavLink>
       <NavLink to="/pages"
-    className={({isActive})=> isActive? ' font-bold bg-blue-300 ':'font-bold'}> Pages to Read</NavLink>
+    className={({isActive})=> isActive? ' font-bold  "border-solid border-2 border-indigo-600  p-2 text-primary ':'font-bold p-2 '}> Pages to Read</NavLink>
     </ul>
   </div>
   <div className="navbar-end gap-3">

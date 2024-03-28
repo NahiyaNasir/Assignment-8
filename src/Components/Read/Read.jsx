@@ -3,7 +3,7 @@
 import { Link } from "react-router-dom";
 
 const Read = ({ data }) => {
-  console.log(data);
+//  console.log(data);
   const {
     bookName,
     author,
@@ -33,7 +33,7 @@ const Read = ({ data }) => {
             <p> Year of Publishing :{yearOfPublishing}</p>
           </div>
           <p className=" flex gap-2  font-semibold">
-            Publisher :{publisher} pages: {totalPages}{" "}
+            Publisher :{publisher} pages: {totalPages}
           </p>
           <div className="card-actions ">
             <button className="btn bg-[#328EFF]"> Category :{category}</button>

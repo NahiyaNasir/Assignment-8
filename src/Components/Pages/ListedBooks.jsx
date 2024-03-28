@@ -10,7 +10,7 @@ const ListedBooks = () => {
   const [read, setRead] = useState([]);
   const [wish, setWish] = useState([]);
  
-  const [sortData, setSortData] = useState([]);
+  
   //    for wish list
   useEffect(() => {
     const showWishList = JSON.parse(localStorage.getItem("wish")) ||[];
@@ -23,6 +23,7 @@ const ListedBooks = () => {
   }, []);
   //console.log(read);
   //    for sorting data
+  const [sortData, setSortData] = useState([]);
           useEffect(()=>{
                 const showSorting= JSON.parse(localStorage.getItem('books'))|| []
               setSortData(showSorting)

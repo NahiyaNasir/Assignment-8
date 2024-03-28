@@ -18,14 +18,16 @@ const StoredDataToLocalStorage= (details)=>{
 }
 
             const StoredDataToLocalStorage2= (details)=>{
-                const storageData=JSON.parse(localStorage.getItem ('wish')) || []
-                    console.log(storageData);
-                        const savedData= storageData.find(item=> item.bookId === details.bookId )
-                        if(savedData ){
+               
+                const storageData2=JSON.parse(localStorage.getItem ('wish')) || []
+                    console.log(storageData2);
+                          
+                        const savedData2= storageData2.find(item=> item.bookId === details.bookId )
+                        if(savedData2 ){
                        toast.error('Already exists')
                         }else{
-                            storageData.push(details) 
-                            localStorage.setItem('wish',JSON.stringify(storageData)) 
+                            storageData2.push(details) 
+                            localStorage.setItem('wish',JSON.stringify(storageData2)) 
                             toast.success('Successfully Added')
                         }
          

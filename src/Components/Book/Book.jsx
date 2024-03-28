@@ -13,13 +13,13 @@ const Book = ({ book }) => {
             <img src={image} alt="Shoes" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title">{bookName}</h2>
-            <p>By :{author}</p>
-            <p className=" flex  gap-2">
+          <p className=" flex  gap-2 text-green-500">
               {tags.map((tag, idx) => (
                 <p key={idx}> #{tag}</p>
-              ))}
-            </p>
+              ))} </p>
+            <h2 className="card-title">{bookName}</h2>
+            <p>By :{author}</p>
+           
             <div className="divider"></div>
             <div className="card-actions">
               <p className="font-serif">{category}</p>

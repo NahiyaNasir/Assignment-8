@@ -24,11 +24,13 @@ const ListedBooks = () => {
   //console.log(read);
   //    for sorting data
           useEffect(()=>{
-                const showSorting= JSON.parse(localStorage.getItem('book'))|| []
+                const showSorting= JSON.parse(localStorage.getItem('books'))|| []
               setSortData(showSorting)
           },[])
  
   const handleSorting = (sorting) => {
+    const sortedData = [...sortData]
+    console.log(sortData);
     if (sorting === "rating") {
       sortData.sort((a, b) => b.rating - a.rating);
     } else if (sorting === "yearOfPublishing") {
@@ -36,7 +38,7 @@ const ListedBooks = () => {
     } else if (sorting === "totalPages") {
       sortData.sort((a, b) => b.totalPages - a.totalPages);
     }
-    setSortData(sortData);
+    setSortData(sortedData);
   };
      
   return (
@@ -58,11 +60,23 @@ const ListedBooks = () => {
         <option value="yearOfPublishing">Year of Publishing</option>
         <option value="totalPages">Total Pages</option>
       </select>
+        
+      <ul>
+        {sortData.map((book) => (
+          <li key={book.id}>
+          Rating: {book.rating}, Year: {book.yearOfPublishing}, Pages: {book.totalPages}
+          </li>
+        ))}
+      </ul>
+
+
+
+
 
       <Tabs className="mt-6">
         <TabList>
           <Tab> Read</Tab>
-          <Tab> Wish</Tab>
+          <Tab> WishList</Tab>
         </TabList>
 
         <TabPanel>

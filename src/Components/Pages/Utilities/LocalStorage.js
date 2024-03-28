@@ -12,7 +12,7 @@ const StoredDataToLocalStorage= (details)=>{
             }else{
                 storageData.push(details) 
                 localStorage.setItem('books',JSON.stringify(storageData)) 
-                toast.success('added')
+                toast.success('Successfully Added')
             }
 
 }
@@ -26,7 +26,7 @@ const StoredDataToLocalStorage= (details)=>{
                         }else{
                             storageData.push(details) 
                             localStorage.setItem('wish',JSON.stringify(storageData)) 
-                            toast.success('added')
+                            toast.success('Successfully Added')
                         }
          
 }
